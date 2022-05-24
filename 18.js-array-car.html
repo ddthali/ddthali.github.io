@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- นายวิทวัส ยงยิ่งยืน -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18.js-array-car.html</title>
+    <script>
+        let car = ['Toyota', 'Benz', 'BMW', 'Audi']
+    </script>
+</head>
+<body>
+    <script>
+        // ดึงข้อมูลจาก array โดยใช้ for loop
+        // for(let i = 0; i < car.length; i++){
+        //     document.write(car[i]+'<br>')
+        // }
+        car[4] = 'Honda'
+        car[5] = 'Ford'
+        car.pop()
+        car.push('Mazda')
+        car.shift()
+        car.unshift('Volvo')
+        //delete car[2]
+        car.sort()
+        car.reverse()
+        // ดึงข้อมูลจาก array โดยใช้ for in loop
+        for (let i in car){
+            document.write(car[i]+'<br>')
+        }
+        // ดึงข้อมูลจาก array โดยใช้ for of loop
+
+
+        // ดึงข้อมูลจาก array โดยใช้ while loop
+        // let i = 0
+        // while (i < car.length) {
+        //     document.write(car[i] + '<br>')
+        //     i++
+        // }
+    </script>
+</body>
+</html>
