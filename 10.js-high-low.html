@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- นายวิทวัส ยงยิ่งยืน -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10.js-high-low.html</title>
+</head>
+<body>
+    Input Number : <input type="text" id="num1">
+    <br>
+    <br>
+    <button style="width :80px;height: 40px;" onclick="process()">Submit</button>
+    <p id="output"></p>
+<script>
+    function process(){
+        if(parseInt(document.getElementById('num1').value) <50){
+            document.getElementById('output').innerHTML = 'LOW'
+        }else{
+            document.getElementById('output').innerHTML = 'HIGH'
+        }
+    }
+</script>
+</body>
+</html>
